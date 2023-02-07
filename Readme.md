@@ -4,12 +4,33 @@ Dibuat dengan tujuan untuk pembuatan aplikasi berbasis VBA yang lebih mudah dan 
 
 ```VBA
 Dim This as New MyFrameWork
-
-
 ```
 
 Set Database dan kolom
-
 ```VBA
-    this.SetDatabase Sheet1, "A"    
+ This.SetDatabase Sheet1, "A"    
 ```
+
+Set Control 
+```VBA
+ This.setControl = Textbox1
+ This.setControl = Combobox1
+```
+
+Reset Control (Membersihkan Control) 
+```VBA
+ This.Reset
+```
+
+Baris terkahir dari Set Database
+```VBA
+Dim Baris as long 
+baris = This.gerbarisDB
+```
+
+Baris terkahir dari Sheet dan Kolom Bebas
+```VBA
+Dim Baris as long 
+baris = This.gerbaris(Sheet1, "A")
+```
+
